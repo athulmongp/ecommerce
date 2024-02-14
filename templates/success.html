@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>success</title>
+    <style>
+        body {
+            background-image: url("{% static 'img/productcover.webp'%}");
+            background-size: cover;
+            background-position: center;
+          
+        
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container" style="background-color: rgb(255, 255, 255,0.8); width: 50%;margin-top: 200px;height: 300px; padding: 20px;border-radius: 10px;">
+            <div class="container-fluid">
+                <center><h1 class="text-center" style="color: rgb(9, 114, 211);text-shadow: 2px 2px 4px #000000; margin-bottom: 40px;">CONGRATULATIONS  !!!!!</h1></center>
+
+            <center><h1 style="color: white; padding-bottom: 20px; padding-top: 10px;  text-shadow: 2px 2px 4px #000000; background-color: green; border-radius: 10px;">order successfully placed</h1></center>
+
+            <center>
+               <a href="{% url 'customerhomepage' %}"> <button type="submit" class="btn btn-success  " style="cursor: pointer; margin-top: 10px;  width: 30%; padding: 10px; border-radius: 10px; background-image: linear-gradient(to right,#111f8b,#578fe8,#0fcdf8); font-weight: bold;">GO BACK</button>
+               </a>
+            </center>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
